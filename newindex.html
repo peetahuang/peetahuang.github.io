@@ -1,11 +1,38 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <title>Coming Soon - DaMengMeng.com</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font.css" />
 </head>
 <body>
-    <video autoplay loop preload="auto" src="video/diving.mp4" id="bgvid">
-    </video>
+    <video autoplay loop preload="auto" src="assets/video/diving.mp4" id="bgvid"></video>
+    <div id="top">
+        <h1>
+            Damengmeng.com
+        </h1>
+    </div>
+    <div id="body">
+        <h1>We are Coming Soon !</h1>
+    </div>
+    <div id="bottom">
+        <h3>&#169; 2014 Designed by <a href="mailto:mengmeng@damengmeng.com?Subject=damengmeng.com" target="_top">MengLee</a></h3>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var overheight = -0.2125 * $(window).width();
+            $("#bgvid").css("margin-top", overheight + 'px');
+            $("div#top").css("height", $(window).height() / 2 + overheight + 'px');
+            $("div#top h1").css("line-height", $(window).height() / 2 + overheight + 'px');
+            $(window).resize(function () {
+                overheight = -0.2125 * $(window).width();
+                $("#bgvid").css("margin-top", overheight + 'px');
+                $("div#top").css("height", $(window).height() / 2 + overheight + 'px');
+                $("div#top h1").css("line-height", $(window).height() / 2 + overheight + 'px');
+            });
+        })();
+    </script>
 </body>
 </html>

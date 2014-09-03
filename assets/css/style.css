@@ -109,7 +109,7 @@ body {
 
 .logo {
     text-align: center;
-    padding: 20 0px;
+    padding: 20px 0px;
     display: block;
 }
 
@@ -315,7 +315,6 @@ body {
 
         .footer p a:hover {
             color: #fff;
-            -;
         }
 
     .footer p span {
