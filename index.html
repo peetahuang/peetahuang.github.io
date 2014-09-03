@@ -1,42 +1,38 @@
-﻿<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html>
-	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
     <title>Coming Soon - DaMengMeng.com</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-		<link href='//fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
-		<link href='//fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-		<div class="wrap">
-			<div class="content">
-				<div class="logo">
-					<a href="index.html"><h1>DMM</h1></a>
-				</div>
-				<p>Be ready, we are launching soon &#33;</p>
-				<div class="form">
-					<form id="contact-form" action="#" method="post">
-						<input placeholder="Please enter your email address" type="email" tabindex="2" required>
-						<input type="submit" name="submit" id="contact-submit" value="Subscribe">
-					</form>
-				</div>
-				<div class="footer">
-				<div class="social-icons">
-					   <a href="#"><span class="simptip-position-bottom simptip-movable" data-tooltip="Facebook"><img src="assets/img/f.png" /></span></a>
-				       <a href="#"> <span class="simptip-position-bottom simptip-movable" data-tooltip="Rss"><img src="assets/img/r.png" /></span></a>
-				       <a href="#">  <span class="simptip-position-bottom simptip-movable" data-tooltip="Twitter"><img src="assets/img/t1.png" /></span></a>
-					<div class="clear"> </div>
-				</div>
-				<p class="copy">&#169; 2014<a href="http://damengmeng.com" target="_blank">&nbsp;DaMengMeng.com</a> </p>
-				</div>
-			</div>
-		</div>
-	</body>
+    <link rel="stylesheet" type="text/css" href="assets/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font.css" />
+</head>
+<body>
+    <video autoplay loop preload="auto" src="assets/video/diving.mp4" id="bgvid"></video>
+    <div id="top">
+        <h1>
+            Damengmeng.com
+        </h1>
+    </div>
+    <div id="body">
+        <h1>We are Coming Soon !</h1>
+    </div>
+    <div id="bottom">
+        <h3>&#169; 2014 Designed by <a href="mailto:mengmeng@damengmeng.com?Subject=damengmeng.com" target="_top">MengLee</a></h3>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var overheight = -0.2125 * $(window).width();
+            $("#bgvid").css("margin-top", overheight + 'px');
+            $("div#top").css("height", $(window).height() / 2 + overheight + 'px');
+            $("div#top h1").css("line-height", $(window).height() / 2 + overheight + 'px');
+            $(window).resize(function () {
+                overheight = -0.2125 * $(window).width();
+                $("#bgvid").css("margin-top", overheight + 'px');
+                $("div#top").css("height", $(window).height() / 2 + overheight + 'px');
+                $("div#top h1").css("line-height", $(window).height() / 2 + overheight + 'px');
+            });
+        })();
+    </script>
+</body>
 </html>
-
