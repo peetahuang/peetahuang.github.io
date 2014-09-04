@@ -20,19 +20,6 @@
     </div>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            var overheight = -0.2125 * $(window).width();
-            $("#bgvid").css("margin-top", overheight + 'px');
-            $("div#top").css("height", $(window).height() / 2 + overheight + 'px');
-            $("div#top h1").css("line-height", $(window).height() / 2 + overheight + 'px');
-            $(window).resize(function () {
-                overheight = -0.2125 * $(window).width();
-                $("#bgvid").css("margin-top", overheight + 'px');
-                $("div#top").css("height", $(window).height() / 2 + overheight + 'px');
-                $("div#top h1").css("line-height", $(window).height() / 2 + overheight + 'px');
-            });
-        })();
-    </script>
+    <script src="assets/script/home.js"></script>
 </body>
 </html>
